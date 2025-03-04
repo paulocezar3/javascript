@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body{
+            width: 800px;
+        }
+        div{
+            font: normal 25pt arial;
+            background-color: rgb(138, 138, 138);
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 300px;
+        }
+        div:hover{
+            background-color: rgb(83, 83, 83);
+        }
+        #nove{
+            margin: 0%;
+            padding: 0%;
+
+        }
+        #res{
+            padding-right: 205px;
+            background-color: aliceblue;
+            border: 1px solid black;
+            line-height: 5.5;
+
+        }
+        input{
+            height: 200px;
+            width: 200px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div id="um">1</div>
+    <div id="dois">2</div>
+    <div id="tres">3</div>
+    <div id="quatro">4</div>
+    <div id="cinco">5</div>
+    <div id="seis">6</div>
+    <div id="sete">7</div>
+    <div id="oito">8</div>
+    <div id="nove">9</div>
+    <div id="res">RESULTADO</div>
+    <input type="button" value="SOMAR" onclick="somar()">
+    <script>
+        function somar(){
+        var one = document.getElementById('um')
+        var one1 = Number(one.value)
+        one.innerText = 1
+        var two = document.getElementById('dois')
+        var two2 = Number(two.value)
+        two.innerText = 2
+        var res = document.getElementById('res')
+        var s = one1 + two2
+        res.innerHTML = s
+    }
+    </script>
+</body>
+</html>
