@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="
+pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>TESTE DE NACIONALIDADE</h1>
+    <form action="php">
+    <label for="pais"><h2> Digite seu país:</label>
+    <input type="text" name="pais" id="ipais" required>
+    <input type="button" value="VERIFICAR" onclick="verificar()">
+    <div id="res"></div></form>
+    <script>
+        function verificar(){
+        var pais = document.getElementById('ipais')
+        var res = document.getElementById('res')
+        if ( pais.value == 'Brasil'){
+    res.innerHTML = 'Você é Brasileiro'
+}
+else{
+    res.innerHTML = 'Você é Estrangeiro'
+}
+}
+    </script>
+</body>
+</html>
